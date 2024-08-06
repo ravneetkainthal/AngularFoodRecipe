@@ -1,0 +1,53 @@
+<div class="card">
+  <h1>Add Your Recipe</h1>
+  <form [formGroup]="recipeForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="name">Recipe Name:</label>
+      <input id="name" formControlName="name" />
+      <div class="error" *ngIf="recipeForm.controls['name']?.invalid && recipeForm.controls['name']?.touched">
+        Recipe name is required.
+      </div>
+    </div>
+    <div>
+      <label for="category">Category:</label>
+      <select id="category" formControlName="category">
+        <option *ngFor="let category of categories" [value]="category">
+          {{ category }}
+        </option>
+      </select>
+      <div class="error" *ngIf="recipeForm.controls['category']?.invalid && recipeForm.controls['category']?.touched">
+        Category is required.
+      </div>
+    </div>
+    <div>
+      <label for="ingredients">Ingredients:</label>
+      <div formArrayName="ingredients">
+        <div *ngFor="let ingredient of ingredients.controls; let i = index" class="ingredient-row">
+          <input [formControlName]="i" placeholder="Ingredient {{ i + 1 }}" />
+          <button type="button" (click)="removeIngredient(i)" class="btn btn-danger">Remove</button>
+        </div>
+      </div>
+      <button type="button" (click)="addIngredient()" class="btn btn-primary">Add Ingredient</button>
+    </div>
+    <div>
+      <label for="instructions">Instructions:</label>
+      <textarea id="instructions" formControlName="instructions"></textarea>
+      <div class="error" *ngIf="recipeForm.controls['instructions']?.invalid && recipeForm.controls['instructions']?.touched">
+        Instructions are required.
+      </div>
+    </div>
+    <button type="submit" [disabled]="recipeForm.invalid" class="btn btn-success">Submit Recipe</button>
+  </form>
+
+  <div *ngIf="submittedRecipes.length > 0" class="submitted-recipes">
+    <h2>Submitted Recipes</h2>
+    <ul>
+      <li *ngFor="let recipe of submittedRecipes">
+        <h3>{{ recipe.name }}</h3>
+        <p><strong>Category:</strong> {{ recipe.category }}</p>
+        <p><strong>Ingredients:</strong> {{ recipe.ingredients.join(', ') }}</p>
+        <p><strong>Instructions:</strong> {{ recipe.instructions }}</p>
+      </li>
+    </ul>
+  </div>
+</div>

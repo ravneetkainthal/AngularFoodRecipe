@@ -1,0 +1,17 @@
+<h1>Random Recipes</h1>
+<div class="recipe-grid">
+  <div *ngFor="let recipe of recipes" class="recipe-card">
+    <!-- Use a fallback online SVG if recipe.image is not available -->
+    <img
+      [src]="recipe.image || 'https://www.svgrepo.com/show/492596/food.svg'"
+      alt="{{ recipe.title }}"
+    />
+    <h3>
+      <!-- Clickable link -->
+      <a [routerLink]="['/recipe', recipe.id]">{{ recipe.title }}</a>
+    </h3>
+  </div>
+</div>
+<div *ngIf="recipes.length === 0">
+  <p>Loading...</p>
+</div>

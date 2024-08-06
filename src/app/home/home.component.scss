@@ -1,0 +1,50 @@
+.introduction,
+.api-details {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.angular-logo,
+.spoonacular-logo {
+  display: block;
+  margin: 1rem auto;
+  max-width: 200px;
+}
+
+h2 {
+  color: #b52e31; /* Angular red color */
+  text-align: center;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+a {
+  color: #1976d2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+.container {
+  display: flex;
+  justify-content: center;  /* Horizontal center */
+  align-items: center;      /* Vertical center */
+             /* Full viewport height */
+  text-align: center;       /* Center text inside the container */
+}
+
+h1 {
+
+  font-size: 2.5rem;        /* Adjust the size as needed */
+  color: #343a40;           /* Optional: Customize color */
+  margin: 10px;                /* Remove default margin */
+}
