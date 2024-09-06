@@ -14,7 +14,6 @@ https://angular-food-recipe-kappa.vercel.app/
 
 
 # Application Features
-======== 
 
 # Home Page: 
 
