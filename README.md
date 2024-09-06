@@ -8,40 +8,40 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 =====================
 
-Deployment Link: 
+# Deployment Link: 
 
 https://angular-food-recipe-kappa.vercel.app/
 
 =====================
 
-Application Features
+# Application Features
 
 =====================
 
-Home Page: Displaying Recipe API and Angular details. 
+# Home Page: Displaying Recipe API and Angular details. 
 
 
-Recipe API Page: Fetches and displays recipes using the Spoonacular API.
+# Recipe API Page: Fetches and displays recipes using the Spoonacular API.
 
 
-Recipe Details Page: Shows detailed instructions and ingredients for selected recipes.
+# Recipe Details Page: Shows detailed instructions and ingredients for selected recipes.
 
 
-Add Recipe Page: Allows users to submit their own recipes with category, ingredients, and instructions.
+# Add Recipe Page: Allows users to submit their own recipes with category, ingredients, and instructions.
 
 =====================
 
-Home Page
+# Home Page
 ![Home Page](image.png)
 
-Recipe API Page
+# Recipe API Page
 ![Recipe API's Page](image-1.png)
 
-Recipe Details
+# Recipe Details
 ![Recipe Details Page](image-2.png)
 
-Adding Recipe form
+# Adding Recipe form
 ![Add Recipe Page](image-3.png)
 
-Added Recipes
+# Added Recipes
 ![Adding recipes using form](image-4.png)
