@@ -18,18 +18,26 @@ https://angular-food-recipe-kappa.vercel.app/
 
 =====================
 
-# Home Page: Displaying Recipe API and Angular details. 
+# Home Page: 
+
+Displaying Recipe API and Angular details. 
 
 
-# Recipe API Page: Fetches and displays recipes using the Spoonacular API.
+# Recipe API Page:
+
+Fetches and displays recipes using the Spoonacular API.
 
 
-# Recipe Details Page: Shows detailed instructions and ingredients for selected recipes.
+# Recipe Details Page:
+
+Shows detailed instructions and ingredients for selected recipes.
 
 
-# Add Recipe Page: Allows users to submit their own recipes with category, ingredients, and instructions.
+# Add Recipe Page:
 
-=====================
+Allows users to submit their recipes with categories, ingredients, and instructions.
+
+
 
 # Home Page
 ![Home Page](image.png)
